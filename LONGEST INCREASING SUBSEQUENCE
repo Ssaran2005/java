@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main
+{
+    public static int Mukund(int[] a)
+    {
+        int arr[]={1,1,1,1,1,1,1,1};
+        for(int i=1;i<a.length;i++){
+            for(int j=0;j<i;j++){
+                if(a[i]>a[j]){
+                    arr[i]=Math.max(arr[i],arr[j]+1);
+                }
+            }
+        }
+        Arrays.sort(arr);
+        return arr[arr.length-1];
+    }
+	public static void main(String[] args) 
+	{
+	    int[] a={10,9,2,5,3,7,101,18};
+	    System.out.println(Mukund(a));
+	    
+	}
+}

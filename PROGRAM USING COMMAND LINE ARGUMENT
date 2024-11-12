@@ -1,0 +1,13 @@
+public class Main
+{
+	public static void main(String[] args) {
+		if(args.length==0){
+		    System.out.print("not provided");
+		}
+		else{
+		    for(int i=0;i<args[1].length();i++){
+		        System.out.println(args[1]);
+		    }
+		}
+	}
+}

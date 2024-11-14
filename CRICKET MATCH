@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+   Scanner sc=new Scanner(System.in);
+        ArrayList<String> al=new ArrayList<>();
+        System.out.print("enter no.of teams: ");
+        int t=sc.nextInt();
+        System.out.print("enter no.of meeting: ");
+        int m=sc.nextInt();
+        String[] arr={"ind","pak","aus","sri","SA"};
+        for(int i=0;i<t;i++)
+        {
+            for(int j=i+1;j<t;j++)
+            {
+                for(int k=0;k<m;k++){
+                    al.add(arr[i]+" vs "+arr[j]);
+                }
+            }
+        }
+        for(String s:al)
+        {
+            System.out.println(s);
+        }
+}
+}
